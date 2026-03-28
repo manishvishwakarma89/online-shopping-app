@@ -1,4 +1,4 @@
-name: Node Matrix using SAST
+name: Node Matrix using lint
 
 on:
     workflow_dispatch:
