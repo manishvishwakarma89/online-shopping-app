@@ -8,11 +8,11 @@ jobs:
     deploy:
       env:
          DOCKERHUB_USER:  $ {{ vars.DOCKERHUB_USER }}
-         DOCKER_TAG:     $ {{ github.event.workflow_run.head_sha }}
+         DOCKER_TAG:      $ {{ github.head_sha }}
 
       runs-on: self-hosted
       steps:
-           - name: checkout code
+           - name: Checkout code
              run:  actions/checkout@v4
           
            - name: deploy with docker compose
