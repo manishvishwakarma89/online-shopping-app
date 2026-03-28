@@ -8,7 +8,8 @@
     "build": "vite build",
     "start": "vite preview --host --port 5173",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "jest"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -48,4 +49,6 @@
     "react-dom": "^18.0.0"
   }
 }
+
+
 
